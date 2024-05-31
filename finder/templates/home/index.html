@@ -1,3 +1,119 @@
-{% extends 'menu/menu.html' %} {% block menu%}
-<div>MENU AQUI CARA</div>
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <div class="row mt-5">
+        <div class="col-12">
+            <h1>
+                Procure por provas ou listas de exercícios
+            </h1>
+        </div>
+    </div>
+    <div class="row mt-5  justify-content-center searchBar">
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="Ex: MAT4200"/>
+        </div>
+    </div>
+     <div class="row mt-5 justify-content-center"> 
+        <div class="col-md-4 mb-4">
+            <div class="card ">
+                <div class="card-body">
+                    <h5 class="card-title">INF1034</h5>
+                    <p class="card-text mt-3">Práticas de Programação</p>
+                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">INF1012</h5>
+                    <p class="card-text mt-3">Modelagem de Dados</p>
+                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="row justify-content-center"> 
+        <div class="col-md-4 mb-4">
+            <div class="card ">
+                <div class="card-body">
+                    <h5 class="card-title">INF1034</h5>
+                    <p class="card-text mt-3">Práticas de Programação</p>
+                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">INF1012</h5>
+                    <p class="card-text mt-3">Modelagem de Dados</p>
+                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="row justify-content-center"> 
+        <div class="col-md-4 mb-4">
+            <div class="card ">
+                <div class="card-body">
+                    <h5 class="card-title">INF1034</h5>
+                    <p class="card-text mt-3">Práticas de Programação</p>
+                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">INF1012</h5>
+                    <p class="card-text mt-3">Modelagem de Dados</p>
+                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 pagination">
+                Registros: 6 de 23 localizados
+            </div>
+        </div>
+    </div> 
+    <div class="row justify-content-center">
+        <div class="col-1">
+            <button class="pagination-button"><i class="fas fa-angle-double-left"></i></button>
+        </div>
+        <div class="col-1">
+            <button class="pagination-button"><i class="fas fa-angle-left"></i></button>
+        </div>
+        <div class="col-1">
+            <button class="pagination-button"><i class="fas fa-angle-right"></i></button>
+        </div>
+        <div class="col-1">
+            <button class="pagination-button"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 mt-5">
+            <h1>
+                O PUC-Finder foi criado na disciplina INF1039 
+            </h1>
+            <p class="about-text mt-4">
+                A proposta é incentivar os alunos a se prepararem de forma mais eficaz para os exames de    A proposta é incentivar os alunos a se prepararem de forma mais eficaz para os exames de Ciência da Computação, disponibilizando listas de exercícios ou provas de anos anteriores. Ciência da Computação, disponibilizando listas de exercícios ou provas de anos anteriores. 
+            </p>
+        </div>
+        <div class="col-md-3 mt-5 d-flex justify-content-center align-items-center">
+            <img src="{% static 'images/image.png' %}" alt="My Image" class="img-fluid">
+        </div>
+    </div>
+
+  
+
+
 {% endblock %}

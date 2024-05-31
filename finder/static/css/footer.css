@@ -1,0 +1,16 @@
+.title {
+    color: #FC6736 !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    padding: 0 !important;
+}
+
+.menu {
+    background-color: #0C2D57;
+}
+
+.text{
+    color: #FFFFFF
+}

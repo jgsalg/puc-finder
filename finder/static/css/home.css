@@ -1,0 +1,66 @@
+h1{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.form-control{
+    background-color: transparent !important;
+    border: 2px solid #0C2D57;
+    height: 60px;
+    border-radius: 18px;
+}
+
+.form-control:focus {
+    border-color: #FC6736; 
+    box-shadow: 0 0 0 0.2rem rgba(252, 103, 54, 0.25); 
+    outline: none; 
+}
+
+
+.searchBar{
+    margin-bottom: 90px;
+}
+
+.card{
+    background-color: transparent;
+    border: 1.5px solid #000;
+    border-radius: 16px;
+}
+
+
+.card-title{
+    font-family: "Roboto", sans-serif;
+    color: #0C2D57 !important;
+}
+
+.card-text{
+    font-family: "Roboto", sans-serif;
+}
+
+.pagination-button{
+    width: 70px !important;
+    background-color: #0C2D57;
+    border: none;
+    border-radius: 5px;
+}
+i{
+    font-size: 18px;
+    color: #FC6736;
+}
+
+.line {
+    height: 1px;
+    background-color: #000;
+    width: 100%; 
+}
+
+.about-text{
+    text-align: justify;
+    width: 70%;
+}
+
+img{
+    height: 300px !important;
+}
