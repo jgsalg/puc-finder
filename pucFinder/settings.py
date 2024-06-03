@@ -1,11 +1,11 @@
 
 
-import os
 from pathlib import Path
+from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-m=g5to$aqj$%nu-b&57=a3k8!y-cc+vd(6s^1u)7)q*d@k1#ia'
+SECRET_KEY =  config('SECRET_KEY')
 
 DEBUG = True
 
@@ -53,8 +53,12 @@ WSGI_APPLICATION = 'pucFinder.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD', default=''),
+        'HOST': config('DB_HOST', default='localhost'),
+        'PORT': config('DB_PORT', default='5432'),
     }
 }
 
