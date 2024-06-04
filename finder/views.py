@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.template import loader
 from django.http import HttpResponse
-from .models import Discipline
+from .models import Disciplina
 
 def index(request):
     template = loader.get_template('home/index.html')
@@ -9,7 +9,7 @@ def index(request):
 
 
 def add_discipline(request):
-    new_discipline = Discipline(
+    new_discipline = Disciplina(
         discipline_code='CS102',
         discipline_name='Computer Science 102',
         quantity_of_exams=3,
