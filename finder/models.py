@@ -4,7 +4,7 @@ from django.db import models
 
 class Disciplina(models.Model):
     codigo_disc = models.CharField(max_length= 7, default = 'INF0000', primary_key=True)
-    nome_disc = models.CharField(max_length=7)
+    nome_disc = models.CharField(max_length= 50)
     qtt_provas = models.PositiveSmallIntegerField(default = 0)
     qtt_listas = models.PositiveSmallIntegerField(default = 0)
     def __str__(self):

@@ -9,7 +9,8 @@ SECRET_KEY =  config('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://f76e140e-67cc-4d73-8adb-9ab0e68c1446-00-1i9xt6gsq6bye.worf.replit.dev']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -53,12 +54,8 @@ WSGI_APPLICATION = 'pucFinder.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD', default=''),
-        'HOST': config('DB_HOST', default='localhost'),
-        'PORT': config('DB_PORT', default='5432'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

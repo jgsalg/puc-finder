@@ -12,68 +12,26 @@
     </div>
     <div class="row mt-5  justify-content-center searchBar">
         <div class="col-6">
-            <input type="text" class="form-control" placeholder="Ex: MAT4200"/>
+            <form action="" method="get">
+            <input type="text" class="form-control" name = "q" placeholder="Ex: MAT4200 ou Álgebra Linear I"/>
+            </form>
         </div>
     </div>
      <div class="row mt-5 justify-content-center"> 
-        <div class="col-md-4 mb-4">
-            <div class="card ">
-                <div class="card-body">
-                    <h5 class="card-title">INF1034</h5>
-                    <p class="card-text mt-3">Práticas de Programação</p>
-                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">INF1012</h5>
-                    <p class="card-text mt-3">Modelagem de Dados</p>
-                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
-                </div>
-            </div>
-        </div>
+
+        {%for dis in disciplinas%}
+         <div class="col-md-4 mb-4">
+             <div class="card ">
+                 <div class="card-body">
+                     <h5 class="card-title">{{dis.codigo_disc}}</h5>
+                     <p class="card-text mt-3">{{dis.nome_disc}}</p>
+                     <p class="card-text mt-3 text-end">{{dis.qtt_provas}} | {{dis.qtt_listas}}</p>
+                 </div>
+             </div>
+         </div>
+        {%endfor%}
+        
     </div> 
-    <div class="row justify-content-center"> 
-        <div class="col-md-4 mb-4">
-            <div class="card ">
-                <div class="card-body">
-                    <h5 class="card-title">INF1034</h5>
-                    <p class="card-text mt-3">Práticas de Programação</p>
-                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">INF1012</h5>
-                    <p class="card-text mt-3">Modelagem de Dados</p>
-                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
-                </div>
-            </div>
-        </div>
-    </div> 
-    <div class="row justify-content-center"> 
-        <div class="col-md-4 mb-4">
-            <div class="card ">
-                <div class="card-body">
-                    <h5 class="card-title">INF1034</h5>
-                    <p class="card-text mt-3">Práticas de Programação</p>
-                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">INF1012</h5>
-                    <p class="card-text mt-3">Modelagem de Dados</p>
-                    <p class="card-text mt-3 text-end">4 provas | 6 listas</p>
-                </div>
-            </div>
-        </div>
         <div class="row justify-content-center">
             <div class="col-md-8 pagination">
                 Registros: 6 de 23 localizados
